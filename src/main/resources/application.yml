@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+management:
+  server:
+    port: 8081
+
+secret-santa:
+  auth:
+    issuer: secret-santa-api
+    secret: change-this-development-secret-to-a-strong-value
+    access-token-minutes: 60
+    refresh-token-days: 30
