@@ -1,6 +1,6 @@
 # Secret Santa Spring Boot API
 
-Spring Boot 3 example that mirrors the `secret-santa-dropwizard` API contract and database model, using the same Secret Santa theme and Java-only backend scope.
+Spring Boot 3 API for the Secret Santa theme, with a Java-only backend scope and an OpenAPI contract that defines the available endpoints.
 
 The service exposes the same core endpoints from `openapi.yaml`, uses JWT bearer authentication for protected routes, and keeps persistence behind an in-memory repository so the example runs without external infrastructure. The supplied PostgreSQL-style schema is included as `src/main/resources/schema.sql` for a future database-backed implementation.
 
@@ -29,4 +29,4 @@ The API listens on `http://localhost:8080`. Management endpoints use port `8081`
 - `POST /v1/group/{id}/draw`
 - `GET /v1/group/{id}/friend`
 
-`openapi.yaml` is copied from the Dropwizard project so both examples share the same contract source.
+`openapi.yaml` is the source of truth for the API contract used by this project.
