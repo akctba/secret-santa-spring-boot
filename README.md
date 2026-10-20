@@ -6,7 +6,7 @@ The service exposes the same core endpoints from `openapi.yaml`, uses JWT bearer
 
 ## Run
 
-Requirements: Java 17+ and Maven 3.9+.
+Requirements: Java 25+ (latest LTS) and Maven 3.9+.
 
 ```bash
 cd /Users/alexkayser/git/secret-santa-spring-boot
